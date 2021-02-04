@@ -1,16 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
+
     <title>Stocks App by hwchw316</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <!-- Cards for base stats -->
+    <div class ="row g-2">
+        <!-- card 1 -->
+        <div class="col-6 p-3 card text-white text-center bg-dark px-3" style="max-width: 18rem;">
+            <div class="card-header">Starting Amount</div>
+            <div class="card-body">
+                <h5 class="card-title">$5,000 </h5>
+                <p class="card-text"> this is the amount you started with </p>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col-6 card text-white text-center bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Current Amount</div>
+            <div class="card-body">
+                <h5 class="card-title">$8,000 </h5>
+                <p class="card-text"> this is the starting amount + P/L </p>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-6 card text-white text-center bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Net Profit Loss</div>
+            <div class="card-body">
+                <h5 class="card-title">$3,000 ( 30.00% )</h5>
+                <p class="card-text"> this is the sum of the starting amount and your P/L </p>
+            </div>
+        </div>
+        <!-- card 4 -->
+        <div class="col-6 p-3 card text-white text-center bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Unrealized Cost</div>
+            <div class="card-body">
+                <h5 class="card-title">$4,000 </h5>
+                <p class="card-text"> this is the amount you used to buy something but not yet sold</p>
+            </div>
+        </div>
+    </div> <!--End of all cards div-->
 
     <!-- My Apex Chart div -->
     <section>
@@ -26,7 +66,8 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="js/bootstrap.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
@@ -44,5 +85,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
