@@ -16,14 +16,46 @@
 </head>
 
 <body>
-    <header>
-        <h1> #searchinput# </h1> 
-        <h2> TES </h2>
+    <!-- Cards for base stats -->
+    <div class ="row g-2">
+        <!-- card 1 -->
+        <div class="col-6 p-3 card text-white text-center bg-dark px-3" style="max-width: 18rem;">
+            <div class="card-header">Starting Amount</div>
+            <div class="card-body">
+                <h5 class="card-title">$5,000 </h5>
+                <p class="card-text"> this is the amount you started with </p>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col-6 card text-white text-center bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Current Amount</div>
+            <div class="card-body">
+                <h5 class="card-title">$8,000 </h5>
+                <p class="card-text"> this is the starting amount + P/L </p>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-6 card text-white text-center bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Net Profit Loss</div>
+            <div class="card-body">
+                <h5 class="card-title">$3,000 ( 30.00% )</h5>
+                <p class="card-text"> this is the sum of the starting amount and your P/L </p>
+            </div>
+        </div>
+        <!-- card 4 -->
+        <div class="col-6 p-3 card text-white text-center bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Unrealized Cost</div>
+            <div class="card-body">
+                <h5 class="card-title">$4,000 </h5>
+                <p class="card-text"> this is the amount you used to buy something but not yet sold</p>
+            </div>
+        </div>
+    </div> <!--End of all cards div-->
 
-        <input type = 'text' id = "searchinput"/>
-        <button id = 'search-btn'> Search </button>
-        
-    </header>
+    <!-- My Apex Chart div -->
+    <section>
+        <div id='chart'></div>
+    </section>
 
 
 
@@ -42,7 +74,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -53,8 +84,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <!-- <script src="js/script.js"></script> -->
-    <script src = 'js/stats.js'></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
