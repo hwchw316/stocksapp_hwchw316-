@@ -1,1 +1,7 @@
 body{background-color:teal;}
+
+
+.listgroup{
+    float: left;
+    display: inline;
+}
