@@ -10,6 +10,13 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- 
+    JS not linked yet -->
+
+
+
+    <!-- stats page -->
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
             <div class="d-flex w-100 justify-content-center">
@@ -50,7 +57,19 @@
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Biggest Gain in a Single</h5>
-                <h5> DropDown </h5>
+                <div class="btn-group just">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Day
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>Day</li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>Week</li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>Month</li>
+                    </ul>
+                </div>
                 <h5 class="text-muted"> 10,000</h5>
 
             </div>
@@ -58,7 +77,19 @@
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Biggest Loss in a Single</h5>
-                <h5> DropDown </h5>
+                <div class="btn-group just">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Day
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>Day</li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>Week</li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>Month</li>
+                    </ul>
+                </div>
                 <h5 class="text-muted"> 10,000</h5>
             </div>
         </a>
@@ -85,20 +116,49 @@
                 <h5 class="mb-1">Lucky day of the Week </h5>
                 <h5 class="text-muted"> Monday</h5>
             </div>
-             <small class="text-muted">Profit on this day is the most ()</small>
+            <small class="text-muted">Profit on this day is the most ()</small>
         </a>
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Worst Day of the Week</h5>
                 <h5 class="text-muted"> Thursday</h5>
             </div>
-             <small class="text-muted">Profit on this day is the least () </small>
+            <small class="text-muted">Profit on this day is the least () </small>
         </a>
 
     </div>
 
 
-
+    <!-- Settings Page -->
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-center">
+                <h5 class="mb-1">Your Settings</h5>
+            </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Initial Amount </h5>
+                <input type="text id= "initialamounttext">
+            </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">View in Currency </h5>
+                 <div class="btn-group just">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        SGD
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>United States Dollars(USD)</li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>Singapore Dollars(SGD) </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
