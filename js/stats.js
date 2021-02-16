@@ -4,6 +4,7 @@ let searchbtn = document.querySelector('#search-btn');
 
 searchbtn.addEventListener('click',async function(){
     let searchinput  = document.querySelector('#searchinput').value;
+    console.log(searchinput);
     let response = await axios.get ('https://www.alphavantage.co/query', {
        'params': {
            'function': 'BALANCE_SHEET',
