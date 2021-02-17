@@ -12,7 +12,7 @@ searchbtn.addEventListener('click', async function () {
             'apikey': '5b7fc71725msh6d5485b5eebd700p173114jsn9573a5c553e8'
         }
     })
-    let mysymbol= response.data.symbol;
+    let mysymbol= ("(") + response.data.symbol + (")");
     // console.log(mysymbol);
     document.getElementById('stocksymbol').innerHTML = mysymbol.toString();
     // console.log(response.data);

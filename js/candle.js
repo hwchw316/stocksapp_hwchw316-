@@ -8,6 +8,12 @@
 // declared an empty array
 var dataarray = [];
 
+// /// this is to clear the chart
+// chart.updateSeries([{
+//     name: 'Series A',
+//     data: dataaaray
+// }])
+
 
 function loadChart() {
     //apex candlestick chart
@@ -20,7 +26,7 @@ function loadChart() {
             height: 350
         },
         title: {
-            text: 'CandleStick Chart',
+            text: 'Daily Chart',
             align: 'left'
         },
         xaxis: {
@@ -48,33 +54,32 @@ searchbtn.addEventListener('click', async function () {
         'params': {
             'function': 'TIME_SERIES_DAILY',
             'symbol': searchinput,
-            // 'interval': '1min',
+            // 'interval': 'Daily',
             'apikey': '5b7fc71725msh6d5485b5eebd700p173114jsn9573a5c553e8'
         }
     })
     console.log(response.data);
     console.log(response.data["Time Series (Daily)"]);
-    let testdata = response.data["Time Series (Daily)"];
+    let dataloaded = response.data["Time Series (Daily)"];
     // change data's date to UNIX
 
-    for (let date in testdata) {
+    for (let date in dataloaded) {
 
-        let openAmount = testdata[date]['1. open'];
-        let highAmount = testdata[date]['2. high'];
-        let lowAmount = testdata[date]['3. low'];
-        let closeAmount = testdata[date]['4. close'];
-        let y = [openAmount, highAmount, lowAmount, closeAmount];
+        let open = dataloaded[date]['1. open'];
+        let high = dataloaded[date]['2. high'];
+        let low = dataloaded[date]['3. low'];
+        let close = dataloaded[date]['4. close'];
+        let y = [open, high, low, close];
         var myDate = new Date(date); // Your timezone!
-        var myEpoch = myDate.getTime() ;
+        var myEpoch = myDate.getTime();
         console.log(myEpoch);
         // change date format
         let item = {
             x: new Date(myEpoch),
-            y: [openAmount, highAmount, lowAmount, closeAmount]
+            y: [open, high, low, close]
         }
         dataarray.unshift(item);
     }
-
 
     console.log(dataarray);
 
