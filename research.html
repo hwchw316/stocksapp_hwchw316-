@@ -26,12 +26,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link "href="index.html">Home</a>
 
                         <!-- // item 1 -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
+                        <a class="nav-link active " aria-current='page' href="research.html">Research</a>
                     </li>
 
                     <!-- // item 2 -->
@@ -57,8 +57,8 @@
     <!-- end of nav bar -->
 
     <header>
-        <h1> <div id ="stockname">Stock Name</div></h1> 
-        <h2 id = 'stocksymbol'> Stock Symbol </h2>
+        <h1> <div id ="stockname">Company</div> </h1> 
+        <h2 id = 'stocksymbol'> Symbol </h2>
 
         <input type = 'text' id = "searchinput" placeholder="Enter Stock Symbol"/>
         <button id = 'search-btn'> Search </button>
@@ -72,7 +72,11 @@
     </br>
     </br>
     </section>
+    <!-- Candlestick chart -->
+    <div>
+        <div id = 'candlestick' ></div>
 
+    </div>
 
    
 
@@ -101,6 +105,8 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- <script src="js/script.js"></script> -->
     <script src = 'js/stats.js'></script>
+    <script src = 'js/candle.js'></script>
 </body>
+
 
 </html>
