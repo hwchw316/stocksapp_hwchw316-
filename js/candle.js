@@ -16,6 +16,8 @@ var dataarray = [];
 
 // daily
 function loadChart() {
+    console.log('chart data')
+    console.log(dataarray)
     //apex candlestick chart
     var options = {
         series: [{
@@ -39,10 +41,13 @@ function loadChart() {
         }
     };
 
+    
+
     var chart = new ApexCharts(document.querySelector("#candlestick"), options);
     chart.render();
     console.log("The Chart is loaded");
 }
+
 
 
 
@@ -112,8 +117,8 @@ searchbtn.addEventListener('click', async function () {
     }
 
     console.log(dataarray);
-
     loadChart();
+
 });
 
 // ///  1 minute chart 

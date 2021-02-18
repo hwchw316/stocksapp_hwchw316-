@@ -6,3 +6,9 @@ body{background-color:teal;}
     display: inline;
 }
 
+#companyname > h1, #companyname > h2 {
+    display: inline-block;
+
+}
+
+

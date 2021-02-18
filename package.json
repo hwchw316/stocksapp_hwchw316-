@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "axios": "^0.21.1",
+    "jexcel": "^4.5.2",
+    "jspreadsheet-ce": "^4.6.0",
     "nodemon": "^2.0.7"
   }
 }
