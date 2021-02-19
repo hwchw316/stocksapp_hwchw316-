@@ -22,15 +22,15 @@ logbtn.addEventListener('click', function () {
     };
 });
 
-for (let i = 0; i < localStorage.length; i++ ){
-    const refno = localStorage.logid(i);
-    // const symbol = localStorage.logsymbol(i);
-    // const quantity = localStorage.logqty(i);
-    // const pricein = localStorage.logpricein(i);
-    // const priceOut = localStorage.logpriceout(i);
-    // const fees = localStorage.logfees(i);
-    logoutput.innerHTML += '${refno} <br/>';
-}
+// for (let i = 0; i < localStorage.length; i++ ){
+//     const refno = localStorage.logid(i);
+//     // const symbol = localStorage.logsymbol(i);
+//     // const quantity = localStorage.logqty(i);
+//     // const pricein = localStorage.logpricein(i);
+//     // const priceOut = localStorage.logpriceout(i);
+//     // const fees = localStorage.logfees(i);
+//     logoutput.innerHTML += '${refno} <br/>';
+// }
 // logbtn.onclick = function(){
 //     alert('test');
 //     console.log(logid);

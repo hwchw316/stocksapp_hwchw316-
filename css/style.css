@@ -6,11 +6,34 @@ body{background-color:teal;}
     display: inline;
 }
 
-#companyname > h1, #companyname > h2 {
+#companyname > h1, #companyname > h2 , #companyname > img{
     display: inline-block;
 }
 
+#companyname{
+    text-align: center;
+}
+ #mainlogo {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+ /* #candlestick {
+    animation-duration: 3s;
+    animation-name: slidein;
+} */
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
+}
 
 a:hover {
-  background-color: yellow;
+  background-color: peachpuff;
 }
