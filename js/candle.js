@@ -9,7 +9,6 @@
 var dataarray = [];
 
 
-
 console.log('chart data')
 console.log(dataarray)
 var options = {
@@ -29,10 +28,10 @@ var options = {
         tooltip: {
             enabled: true
         }
-    }
+    },
+    
+
 };
-
-
 var chart = new ApexCharts(document.querySelector("#candlestick"), options);
 chart.render();
 console.log("The Chart is loaded");

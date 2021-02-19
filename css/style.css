@@ -1,4 +1,9 @@
-body{background-color:teal;}
+body{
+    background-image: url("../css/rock.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+color : white;
+}
 
 
 .listgroup{
@@ -13,6 +18,15 @@ body{background-color:teal;}
 #companyname{
     text-align: center;
 }
+
+#companydes{
+    padding-left: 30px;
+}
+
+#candlestick{
+    padding-left : 30px;
+}
+
  #mainlogo {
     animation-duration: 3s;
     animation-name: slidein;
