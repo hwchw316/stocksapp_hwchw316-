@@ -14,10 +14,10 @@
     <!-- 
     JS not linked yet -->
 
-        <!-- navbar -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="rocket.png" >RocketShip</a>
+            <a class="navbar-brand" href="index.html"> <img src="rocket.png">RocketShip</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -26,12 +26,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link "href="index.html">Home</a>
+                        <a class="nav-link " href="index.html">Home</a>
 
                         <!-- // item 1 -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="research.html">Research</a>
+                        <a class="nav-link" href="research.html">Research</a>
                     </li>
 
                     <!-- // item 2 -->
@@ -42,7 +42,7 @@
                     <!-- // item 3 -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="tradelog.html">Trade Log</a>
+                        <a class="nav-link" href="tradelog.html">Trade Log</a>
                     </li>
                 </ul>
 
@@ -68,7 +68,7 @@
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Initial Amount </h5>
-                <h5 class="text-muted"> 10,000</h5>
+                <h5 class="text-muted" id='statsinitial'> 10,000</h5>
             </div>
         </a>
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -77,100 +77,45 @@
                 <h5 class="text-muted"> 20,000</h5>
             </div>
         </a>
-        </a>
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Trade Win-Loss Ratio</h5>
-                <h5 class="text-muted"> 10,000</h5>
-            </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Largest Single Trade Gain</h5>
-                <h5 class="text-muted"> 2,000</h5>
-            </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Largest Single Trade Loss</h5>
-                <h5 class="text-muted"> 10,000</h5>
-            </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Biggest Gain in a Single</h5>
-                <div class="btn-group just">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Day
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li>Day</li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>Week</li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>Month</li>
-                    </ul>
+                <h5 class="mb-1">Trades Won Count</h5>
+                <div>
+                    <h5 class="text-muted"> 1 </h5>
+                    <button class='statsbutton' id='tradewonbtn'>- 1</button>
+                    <button class='statsbutton' id='tradewonbtn'>+ 1</button>
                 </div>
-                <h5 class="text-muted"> 10,000</h5>
-
             </div>
         </a>
-
-        
-
-
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Biggest Loss in a Single</h5>
-                <div class="btn-group just">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Day
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li>Day</li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>Week</li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>Month</li>
-                    </ul>
+                <h5 class="mb-1">Trades Lost Count</h5>
+                <div>
+                    <h5 class="text-muted"> 4 </h5>
+                    <button class='statsbutton' id = 'tradewonbtn'> - 1</button>
+                    <button class='statsbutton' id = 'tradewonbtn'> + 1</button>
                 </div>
-                <h5 class="text-muted"> 10,000</h5>
             </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Most Traded Stock</h5>
-                <h5 class="text-muted"> BNGO </h5>
-            </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Average Percentage Gain</h5>
-                <h5 class="text-muted"> 10% </h5>
-            </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Average Percentage Loss</h5>
-                <h5 class="text-muted"> 20% </h5>
-            </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Lucky day of the Week </h5>
-                <h5 class="text-muted"> Monday</h5>
-            </div>
-            <small class="text-muted">Profit on this day is the most ()</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Worst Day of the Week</h5>
-                <h5 class="text-muted"> Thursday</h5>
-            </div>
-            <small class="text-muted">Profit on this day is the least () </small>
-        </a>
+    </a>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Trade Win-Loss Ratio</h5>
+            <h5 class="text-muted"> 10,000</h5>
+        </div>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Largest Single Trade Gain</h5>
+            <h5 class="text-muted"> 2,000</h5>
+        </div>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Largest Single Trade Loss</h5>
+            <h5 class="text-muted"> 10,000</h5>
+        </div>
+    </a>
 
     </div>
 
@@ -184,26 +129,31 @@
         </a>
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Initial Amount </h5>
-                <input type="text id= "initialamounttext">
+                <h5 class="mb-1" id='initamt'>Initial Amount </h5>
+                <div>
+                <input type="number" id= "initialamounttext" placeholder = "Update initial amount here">
+                <button id = "initialamtbtn" >Update</button>
+                </div>
             </div>
         </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <!-- <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">View in Currency </h5>
-                 <div class="btn-group just">
+                <div class="btn-group just">
                     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         SGD
                     </button>
                     <ul class="dropdown-menu">
                         <li>United States Dollars(USD)</li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li>Singapore Dollars(SGD) </li>
                     </ul>
                 </div>
             </div>
-        </a>
+        </a> -->
     </div>
 
     <p> Made by https://github.com/hwchw316
@@ -234,6 +184,7 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- <script src="js/script.js"></script> -->
     <script src='js/stats.js'></script>
+    <script src='js/mystats.js'></script>
     </body>
 
 </html>
