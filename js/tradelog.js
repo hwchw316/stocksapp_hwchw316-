@@ -15,12 +15,22 @@ logbtn.addEventListener('click', function () {
         [localStorage.setItem("refno", logid),
         localStorage.setItem("symbol", logsymbol),
         localStorage.setItem('quantity', logqty),
-        localStorage.setItem('Price In',logpricein),
-        localStorage.setItem("Price Out", logpriceout),
-        localStorage.setItem("Fees", logfees)]
-        location.reload();
+        localStorage.setItem('priceIn',logpricein),
+        localStorage.setItem("priceOut", logpriceout),
+        localStorage.setItem("fees", logfees)]
+        // location.reload();
     };
 });
+
+for (let i = 0; i < localStorage.length; i++ ){
+    const refno = localStorage.logid(i);
+    // const symbol = localStorage.logsymbol(i);
+    // const quantity = localStorage.logqty(i);
+    // const pricein = localStorage.logpricein(i);
+    // const priceOut = localStorage.logpriceout(i);
+    // const fees = localStorage.logfees(i);
+    logoutput.innerHTML += '${refno} <br/>';
+}
 // logbtn.onclick = function(){
 //     alert('test');
 //     console.log(logid);
