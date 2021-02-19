@@ -16,14 +16,60 @@
 </head>
 
 <body>
-<!-- navbar -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="rocket.png">RocketShip</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+                        <!-- // item 1 -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">Research</a>
+                    </li>
+
+                    <!-- // item 2 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="stats.html">Stats</a>
+                    </li>
+
+                    <!-- // item 3 -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tradelog.html">Trade Log</a>
+                    </li>
+
+                    <!-- // item test -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="working1.html">test</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Enter Stock Symbol" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Go</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end of nav bar -->
 
 
     <!-- card stats summary -->
     <div class="row row-cols-2 row-cols-md-2 g-4 ">
         <!-- card 1 -->
-        <div class="col " style = "text-align: center;">
-            <div class="card text-white bg-dark mb-3 text-center"  style="max-width: 18rem;">
+        <div class="col " style="text-align: center;">
+            <div class="card text-white bg-dark mb-3 text-center" style="max-width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">5000</h5>
                     <p class="card-text">Initial Amount</p>
@@ -32,7 +78,7 @@
         </div>
         <!-- card 2 -->
         <div class="col">
-            <div class="card text-white bg-dark mb-3 text-center"  style="max-width: 18rem;">
+            <div class="card text-white bg-dark mb-3 text-center" style="max-width: 18rem;">
 
                 <div class="card-body">
                     <h5 class="card-title">8000</h5>
@@ -52,8 +98,8 @@
         </div>
         <!-- card 4 -->
         <div class="col">
-            <div class="card text-white bg-dark mb-3 text-center"  style="max-width: 18rem;">
-                
+            <div class="card text-white bg-dark mb-3 text-center" style="max-width: 18rem;">
+
                 <div class="card-body">
                     <h5 class="card-title">$8000</h5>
                     <p class="card-text">Stocks bought not yet sold</p>
@@ -61,6 +107,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Trade Log Entry -->
+    <legend> Insert your trade log here </legend>
 
 
     <!-- My Apex Chart div -->
@@ -95,7 +144,16 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <!-- JEXCEL -->
+    <script src="https://bossanova.uk/jexcel/v4/jexcel.js"></script>
+    <script src="https://jsuites.net/v3/jsuites.js"></script>
+    <link rel="stylesheet" href="https://jsuites.net/v3/jsuites.css" type="text/css" />
+    <link rel="stylesheet" href="https://bossanova.uk/jexcel/v4/jexcel.css" type="text/css" />
+
+    <!-- Own Files -->
     <script src="js/script.js"></script>
+    <script src = "working1.js"></script>
 </body>
 
 </html>

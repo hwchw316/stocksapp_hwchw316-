@@ -108,6 +108,23 @@
         </div>
     </div>
 
+    <!-- Trade Log Entry -->
+    <div>
+        <!-- <legend> Insert your trade log here </legend> -->
+        <input type='number' id='logid' placeholder='enter ref number'/>
+        <input id='logsymbol' type='text' placeholder=' enter stock symbol'/>
+        <input id='logqty' type='number' placeholder=' enter quantity bought'/>
+        <input id='logpricein' type='number' placeholder=' enter price bought'/>
+        <input id='logpriceout' type='number' placeholder=' enter price sold'/>
+        <input id='logfees' type='number' placeholder=' enter fees paid'/>
+        <button id="logbtn"> Log </button>
+    </div>
+
+    <fieldset>
+        <legend> Trade Log Entries </legend>
+        <div id='logoutput'></div>
+
+    </fieldset>
 
     <!-- My Apex Chart div -->
     <section>
@@ -149,8 +166,9 @@
     <link rel="stylesheet" href="https://bossanova.uk/jexcel/v4/jexcel.css" type="text/css" />
 
     <!-- Own Files -->
+    <script src='js/tradelog.js'></script>
     <script src="js/script.js"></script>
-    <script src = "working1.js"></script>
+    <script src="working1.js"></script>
 </body>
 
 </html>
