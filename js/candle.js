@@ -7,11 +7,36 @@
 
 // declared an empty array
 var dataarray = [];
+// var options = {
+//     series: [],
+//     chart: {
+//         type: 'candlestick',
+//         height: 350
+//     },
+//     title: {
+//         text: 'Daily Chart',
+//         align: 'left'
+//     },
+//     xaxis: {
+//         type: 'datetime'
+//     },
+//     yaxis: {
+//         tooltip: {
+//             enabled: true
+//         }
+//     },
+    
 
+// };
+// var chart = new ApexCharts(document.querySelector("#candlestick"), options);
+// chart.render();
+// console.log("The Chart is loaded");
 
-console.log('chart data')
-console.log(dataarray)
-var options = {
+/// main search bar
+searchbtn.addEventListener('click', async function () {
+    dataarray = [];
+    ///
+    var options = {
     series: [],
     chart: {
         type: 'candlestick',
@@ -36,9 +61,7 @@ var chart = new ApexCharts(document.querySelector("#candlestick"), options);
 chart.render();
 console.log("The Chart is loaded");
 
-/// main search bar
-searchbtn.addEventListener('click', async function () {
-    dataarray = [];
+    ///
     let searchinput = document.querySelector('#searchinput').value;
     let response = await axios.get('https://www.alphavantage.co/query', {
         'params': {
