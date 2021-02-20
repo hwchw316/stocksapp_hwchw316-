@@ -27,11 +27,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link"  href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <!-- // item 2 -->
                     <li class="nav-item">
-                        <a class="nav-link active" aira-current = "page" href="stats.html">Stats</a>
+                        <a class="nav-link active" aira-current="page" href="stats.html">Stats</a>
                     </li>
 
                     <!-- // item 3 -->
@@ -61,16 +61,15 @@
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Current Amount </h5>
-                <h5 class="text-muted"  id = 'statscurr'> Loading...</h5>
+                <h5 class="text-muted" id='statscurr'> Loading...</h5>
             </div>
         </a>
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Trades Won Count</h5>
+                <h5 class="mb-1">Total Proft / Loss</h5>
                 <div>
-                    <h5 class="text-muted" id='tradewoncount'> 9 </h5>
-                    <button class='statsbutton' id='tradewonbtnup'>- 1</button>
-                    <button class='statsbutton' id='tradewonbtndown'>+ 1</button>
+                    <h5 class="text-muted" id='PNL'> Calculating... </h5>
+
                 </div>
             </div>
         </a>
@@ -79,8 +78,7 @@
                 <h5 class="mb-1">Trades Lost Count</h5>
                 <div>
                     <h5 class="text-muted" id='tradelosscount'> 4 </h5>
-                    <button class='statsbutton' id='tradelossbtnup'> - 1</button>
-                    <button class='statsbutton' id='tradelossbtndown'> + 1</button>
+
                 </div>
             </div>
         </a>
@@ -123,12 +121,21 @@
                 </div>
             </div>
         </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1" id='curramt'>Current Amount </h5>
                 <div>
                     <input type="number" id="curramounttext" placeholder="Enter new value">
                     <button id="curramtbtn">Update</button>
+                </div>
+            </div>
+        </a>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1" id='curramt'>Click here to refresh the page for the Profit/Loss to calculate </h5>
+                <div>
+                    <button id="refreshbtn">Refresh</button>
                 </div>
             </div>
         </a>
