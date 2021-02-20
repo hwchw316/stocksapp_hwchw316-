@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link " href="index.html">Home</a>
                     </li>
                     <!-- // item 2 -->
                     <li class="nav-item">
@@ -36,59 +36,19 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="diary.html">Diary</a>
+                        <a class="nav-link active " aria-current="page" href="diary.html">Diary</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- end of nav bar -->
-    <div id='nonav'>
-        <header id='companyname'>
-            <h1>
-                <div class='mt-5 mr-20' id="stockname" mt-3> To start your journey with Rocketship, search for a stock
-                    symbol in the textbox below !</div>
-            </h1>
-            <h2 class='mt-5' id='stocksymbol'> One step at a time is all it takes for you to get there.</h2>
-            <!-- <img src="rocket.png"> -->
-            <br />
-            <br />
 
 
-            <input class='btn btn-outline-dark' type='text' id="searchinput" placeholder="Enter Stock Symbol" />
-            <button id='search-btn' class="btn btn-outline-dark"> Search </button>
-            <br />
-            <br />
-            <br />
 
-        </header>
-        <section id='companydes'>
-            <div>
-                <h7 class='mt-5' id='industry1'></h7>
-            </div>
-            <div>
-                <h7 id='sector1'></h7>
-            </div>
-            </br>
-            <h7 id='description1'> </h7>
-            </br>
-            </br>
-        </section>
-        </br>
-        </br>
-        <!-- Candlestick chart -->
-        <div>
-            <div id='candlestick' mt3></div>
-            <!-- <button id='btn1min'> 1min </button>
-        <button id='btn5min'> 5min </button>
-        <button id='btn15min'> 15min </button>
-        <button id='btndaily'> Daily </button>
-        <button id='btnmonthly'> Monthly </button>
-        -->
-        </div>
-    </div>
-
+    <input class='btn btn-outline-dark' type='text' id="txt" placeholder="Enter Entry" />
+    <button id='diaryadd-btn' class="btn btn-outline-dark" onclick = 'getRs()'> Add </button>
+    <div id = 'rs'></div>
 
 
 
@@ -114,8 +74,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src='js/research.js'></script>
-    <script src='js/candle.js'></script>
+    <script src='js/diary.js'></script>
 </body>
 
 

@@ -52,7 +52,6 @@ else {
 //// current amount color change
 if (storedcurr >= storedinitial ) {
     document.getElementById("statscurr").style.color = '#228B22';
-
 }
 
 else {
