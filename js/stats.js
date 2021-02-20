@@ -1,15 +1,15 @@
 let updateinitialbtn = document.querySelector('#initialamtbtn');
 storedinitial = JSON.parse(window.localStorage.getItem('storedinitial'));
-document.getElementById('statsinitial').innerHTML = '$' +storedinitial;
+document.getElementById('statsinitial').innerHTML = storedinitial;
 // document.getElementById('statsinitial').innerHTML = '$' +thousands_separators(storedinitial);
 
 let curramtbtn = document.querySelector('#curramtbtn');
 storedcurr = JSON.parse(window.localStorage.getItem('storedcurr'));
-document.getElementById('statscurr').innerHTML = '$' + storedcurr;
+document.getElementById('statscurr').innerHTML =  storedcurr;
 // document.getElementById('statscurr').innerHTML = '$' +thousands_separators(storedcurr);
 
 let storedpnl =  parseInt(storedcurr) - parseInt(storedinitial);
-document.getElementById('PNL').innerHTML = '$' + storedpnl;
+document.getElementById('PNL').innerHTML =  storedpnl;
 // document.getElementById('PNL').innerHTML = '$' +thousands_separators(storedpnl);
 
 
@@ -45,7 +45,22 @@ if (storedpnl >= 0) {
 else {
     document.getElementById("PNL").style.color = "#DC143C";
     document.getElementById("perchange").style.color = "#DC143C";
+    
 }
+
+
+//// current amount color change
+if (storedcurr >= storedinitial ) {
+    document.getElementById("statscurr").style.color = '#228B22';
+
+}
+
+else {
+   document.getElementById("statscurr").style.color = '#DC143C';
+}
+
+
+
 /// strange... style.backgroundColor works but not style.color
 // green #228B22
 // red '#DC143C'
