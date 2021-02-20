@@ -37,12 +37,14 @@ curramtbtn.addEventListener('click', function () {
 
 /// conditional color change
 
-if (storedpnl > 0) {
-    document.getElementById("PNL").style.backgroundColor = '#228B22'
+if (storedpnl >= 0) {
+    document.getElementById("PNL").style.color = '#228B22';
+    document.getElementById("perchange").style.color = '#228B22';
 }
 
 else {
-    document.getElementById("PNL").style.color = "red";
+    document.getElementById("PNL").style.color = "#DC143C";
+    document.getElementById("perchange").style.color = "#DC143C";
 }
 /// strange... style.backgroundColor works but not style.color
 // green #228B22
