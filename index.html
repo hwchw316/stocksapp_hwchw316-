@@ -17,7 +17,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"> <img src="rocket.png">RocketShip</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -46,40 +46,52 @@
     </nav>
 
     <!-- end of nav bar -->
+    <div id='nonav'>
+        <header id='companyname'>
+            <h1>
+                <div class='mt-5 mr-20' id="stockname" mt-3> To start your journey with Rocketship, search for a stock
+                    symbol in the textbox below !</div>
+            </h1>
+            <h2 class='mt-5' id='stocksymbol'> One step at a time is all it takes for you to get there.</h2>
+            <!-- <img src="rocket.png"> -->
+            <br />
+            <div>
+                <input class='mt-5' type='text' id="searchinput" placeholder="Enter Stock Symbol" />
+                <button id='search-btn' class="btn btn-outline-dark"> Search </button>
+            </div>
 
-    <header id='companyname'>
-        <h1>
-            <div id="stockname"></div>
-        </h1>
-        <h2 id='stocksymbol'></h2>
-        <!-- <img src="rocket.png"> -->
-        <br />
 
-        <input type='text' id="searchinput" placeholder="Enter Stock Symbol" />
-        <button id='search-btn'> Search </button>
 
-    </header>
-    <section id = 'companydes'>
+
+            <br />
+            <br />
+            <br />
+
+        </header>
+        <section id='companydes'>
+            <div>
+                <h7 class='mt-5' id='industry1'></h7>
+            </div>
+            <div>
+                <h7 id='sector1'></h7>
+            </div>
+            </br>
+            <h7 id='description1'> </h7>
+            </br>
+            </br>
+        </section>
+        </br>
+        </br>
+        <!-- Candlestick chart -->
         <div>
-            <h7 id='industry1'></h7>
-        </div>
-        <div>
-            <h7 id='sector1'></h7>
-        </div>
-        </br>
-        <h7 id='description1'> </h7>
-        </br>
-        </br>
-    </section>
-    <!-- Candlestick chart -->
-    <div>
-        <div id='candlestick' mt3></div>
-        <!-- <button id='btn1min'> 1min </button>
+            <div id='candlestick' mt3></div>
+            <!-- <button id='btn1min'> 1min </button>
         <button id='btn5min'> 5min </button>
         <button id='btn15min'> 15min </button>
         <button id='btndaily'> Daily </button>
         <button id='btnmonthly'> Monthly </button>
         -->
+        </div>
     </div>
 
 

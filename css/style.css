@@ -1,8 +1,9 @@
 body{
-    /* background-image: url("../css/rock.jpg"); */
-    background-size: auto 100%;
+    /* background-image: url("../css/2799006.jpg"); */
     background-repeat: no-repeat;
-/* color : white; */
+    color: #808080;
+    /* color : white; */
+    /* background-color:#59a6a6; */
 }
 
 
@@ -13,6 +14,7 @@ body{
 
 #companyname > h1, #companyname > h2 , #companyname > img{
     display: inline-block;
+    color: black;
 }
 
 #companyname{
