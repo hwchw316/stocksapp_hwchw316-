@@ -53,6 +53,7 @@ The site should:
 ## Bugs
 1. thousand seperator only works when there is an initial value at the start.
 2. api is limited to a certain number of calls per day 
+3. local storage saving value as blanks will crash the system 
 
 ## Yet to implement
 1. a login page with authentication for user to enter and store their data
@@ -68,7 +69,6 @@ The site should:
 11. a page where you can find how companies are related to each other
 e.g. Mergers, rumors, acquistions, deals, servicer provider to supply (Electrical Vehicles and Electrical Vehicles Lithumn Battery)
 
-
 ## Visual Design
 1. after comparing with similar sites like yahoo finance, investing.com, seeking alpha, a plain background is a good decision to not strain the eyes
 2. mobile responsiveness is designed through mobile design first.
@@ -79,8 +79,14 @@ e.g. Mergers, rumors, acquistions, deals, servicer provider to supply (Electrica
 2. format chart data datetime to EPOCH format that apexcharts require
 3. reorder chart data to oldest to newest instead of newest to oldest for chart to display in the right chronological order
 4. ensure that render chart data is deleted else chart will display previous search data
-5. 
+
+
+### Stats page
+1. test the local storage inputs
+2. ensure that the html is not overwritten and persist for color change to work
+3. ensure thousand seperator is not an return an empty element
+
 
 
 ## credits
-1. https://www.youtube.com/watch?v=hvU9Wegza94  for making a publish datetime entry
+1. [youtube coder that does] (https://www.youtube.com/watch?v=hvU9Wegza94)  for making a publish datetime entry
