@@ -68,6 +68,7 @@ The site should:
 10. a page where you can store multiple watchlists and see live updates on their prices
 11. a page where you can find how companies are related to each other
 e.g. Mergers, rumors, acquistions, deals, servicer provider to supply (Electrical Vehicles and Electrical Vehicles Lithumn Battery)
+12. autocomplete in search bar
 
 ## Visual Design
 1. after comparing with similar sites like yahoo finance, investing.com, seeking alpha, a plain background is a good decision to not strain the eyes
